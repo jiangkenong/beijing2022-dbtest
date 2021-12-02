@@ -11,7 +11,7 @@ $password = $db['pass'];
 $name = $db['name'];
 $host = $db['host'];
 $type = $db['type'];
-$link = mysql_connect('localhost', $user, $password);
+$link = mysql_connect($host, $user, $password);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }
